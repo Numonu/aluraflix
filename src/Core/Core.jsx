@@ -2,6 +2,8 @@ import { Home } from "../pages/home/layout/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
+import { Global } from "../global/layout/Global";
+import { Main } from "../pages/home/layout/Main";
 
 export const dataContext = createContext(null);
 export function Core() {
@@ -31,7 +33,9 @@ export function Core() {
 		>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/" element={<Global />} >
+						<Route index element={<Main/>}/>
+					</Route>
 				</Routes>
 			</BrowserRouter>
 		</dataContext.Provider>
