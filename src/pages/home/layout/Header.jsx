@@ -18,7 +18,7 @@ export function Header() {
 				className="text-white relative px-1 aspect-square text-2xl hover:bg-white hover:text-black transition-colors rounded-full xl:text-xl"
 				onClick={() => (dialog ? close() : open())}
 			>
-                <Dialog>
+                <Dialog className="bg-white">
                     holaxd
                 </Dialog>
 				<BsThreeDotsVertical />
