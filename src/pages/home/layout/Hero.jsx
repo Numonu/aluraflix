@@ -3,7 +3,7 @@ import { Video } from "../../../global/components/Video";
 
 export function Hero() {
 	return (
-		<div className="py-4 px-1 grid grid-cols-1 gap-4 md:py-6 lg:grid-cols-2 lg:h-[30rem]">
+		<div className="py-4 px-1 grid grid-cols-1 gap-4 md:py-6 lg:grid-cols-2 lg:h-[22rem]">
 			<div className="flex flex-col gap-4 lg:justify-center">
 				<Badge className="bg-sky-500">
                     Front End
