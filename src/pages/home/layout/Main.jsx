@@ -12,7 +12,7 @@ export function Main() {
 			</div>
 			<div className="bg-zinc-900 px-2 py-6">
 				<div className="max-w-[1200px] mx-auto">
-					<Category />
+					<Category title="Front End" badgeBackground="red"/>
 				</div>
 			</div>
 		</main>
