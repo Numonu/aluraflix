@@ -1,6 +1,6 @@
-export function Video() {
+export function Video({className}) {
 	return (
-		<div>
+		<div className={`border-2 ${className}`}>
             <iframe
                 className="w-full aspect-video"
 				src="https://www.youtube-nocookie.com/embed/7tEbuCZNVeM"
