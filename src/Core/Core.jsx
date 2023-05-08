@@ -36,7 +36,7 @@ export function Core() {
 					<Route path="/" element={<Global />} >
 						<Route index element={<Main/>}/>
 						<Route path="create-category" element={<CreateCategory/>}/>
-					</Route>git
+					</Route>
 				</Routes>
 			</BrowserRouter>
 		</dataContext.Provider>
