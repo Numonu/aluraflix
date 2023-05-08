@@ -1,4 +1,4 @@
-import { Header } from "./Header";
+import { Header } from "../../../global/layout/Header";
 import { Main } from "./Main";
 
 export function Home(){
