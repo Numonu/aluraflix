@@ -1,4 +1,5 @@
 import { Badge } from "../../../global/components/Badge";
+import { Video } from "../../../global/components/Video";
 
 export function Hero() {
 	return (
@@ -16,7 +17,7 @@ export function Hero() {
 				</p>
 			</div>
 			<div>
-
+                <Video/>
             </div>
 		</div>
 	);
