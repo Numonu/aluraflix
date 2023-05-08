@@ -5,7 +5,7 @@ export function Video({ link, borderColor }) {
 	return (
 		<iframe
 			style={{borderColor : borderColor}}
-			className="w-full aspect-video border-2"
+			className="w-full aspect-video border-2 max-w-lg"
 			src={`https://www.youtube-nocookie.com/embed/${videoId}`}
 			title="YouTube video player"
 			frameBorder="0"
