@@ -8,7 +8,7 @@ export function Hero() {
 				<Badge className="bg-sky-500">
                     Front End
                 </Badge>
-				<h2 className="text-3xl">
+				<h2 className="text-3xl lg:text-4xl">
                     Challenge React
                 </h2>
 				<p>
