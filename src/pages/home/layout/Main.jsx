@@ -26,6 +26,14 @@ export function Main() {
 								"https://www.youtube.com/watch?v=O-TAjnvWjAE",
 							]}
 						/>
+						<Category
+							title="Back End"
+							badgeBackground="red"
+							videos={[
+								"https://www.youtube.com/watch?v=O-TAjnvWjAE",
+								"https://www.youtube.com/watch?v=O-TAjnvWjAE",
+							]}
+						/>
 					</CategoryContex.Provider>
 				</div>
 			</div>
