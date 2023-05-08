@@ -1,4 +1,3 @@
-import { Home } from "../pages/home/layout/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { createContext } from "react";
