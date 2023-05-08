@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { Dialog } from "../../../global/components/Dialog";
+import { NavDialog } from "../components/NavDialog";
 export function Header() {
 	const [dialog, setDialog] = useState(false);
 
@@ -18,7 +18,7 @@ export function Header() {
 				className="text-white relative px-1 aspect-square text-2xl hover:bg-white hover:text-black transition-colors rounded-full xl:text-xl"
 				onClick={() => (dialog ? close() : open())}
 			>
-				{dialog && <Dialog className="bg-white"></Dialog>}
+				{dialog && <NavDialog />}
 				<BsThreeDotsVertical />
 			</button>
 		</header>
