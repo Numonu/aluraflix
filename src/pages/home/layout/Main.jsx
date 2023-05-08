@@ -12,7 +12,14 @@ export function Main() {
 			</div>
 			<div className="bg-zinc-900 px-2 py-6">
 				<div className="max-w-[1200px] mx-auto">
-					<Category title="Front End" badgeBackground="red"/>
+					<Category
+						title="Front End"
+						badgeBackground="red"
+						videos={[
+							"https://www.youtube.com/watch?v=O-TAjnvWjAE",
+							"https://www.youtube.com/watch?v=O-TAjnvWjAE",
+						]}
+					/>
 				</div>
 			</div>
 		</main>
