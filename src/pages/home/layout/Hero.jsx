@@ -3,20 +3,19 @@ import { Video } from "../../../global/components/Video";
 
 export function Hero() {
 	return (
-		<div className="py-4 px-1">
-			<div className="flex flex-col gap-3">
+		<div className="py-4 px-1 flex flex-col gap-4">
+			<div className="flex flex-col gap-4">
 				<Badge className="bg-sky-500">
-                    FrontEnd
+                    Front End
                 </Badge>
-				<h2 className="text-2xl">
+				<h2 className="text-3xl">
                     Challenge React
                 </h2>
 				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Eius, neque.
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque optio rerum ab amet, accusantium dolorum aperiam eum iusto asperiores eveniet.
 				</p>
 			</div>
-			<div>
+			<div className="w-full max-w-md mx-auto">
                 <Video/>
             </div>
 		</div>
