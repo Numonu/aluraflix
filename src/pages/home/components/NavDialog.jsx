@@ -1,4 +1,4 @@
-import { Dialog } from "../../../global/components/Dialog";
+import { Dialog } from "./Dialog";
 export function NavDialog() {
 	return (
 		<Dialog className="bg-black text-white p-2 text-lg flex flex-col gap-2 w-max text-start rounded-md lg:text-base">

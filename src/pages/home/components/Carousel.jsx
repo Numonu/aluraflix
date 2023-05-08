@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { CategoryContex } from "../../pages/home/layout/Main";
-import { Video } from "./Video";
+import { CategoryContex } from "../layout/Main";
+import { Video } from "../components/Video";
 
 export function Carousel() {
 

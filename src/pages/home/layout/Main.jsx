@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { createContext } from "react";
 import { dataContext } from "../../../Core/Core";
-import { Category } from "../../../global/components/Category";
+import { Category } from "../components/Category";
 import { Hero } from "./Hero";
 
 export const CategoryContex = createContext(null);

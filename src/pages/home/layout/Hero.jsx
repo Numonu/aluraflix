@@ -1,5 +1,5 @@
-import { Badge } from "../../../global/components/Badge";
-import { Video } from "../../../global/components/Video";
+import { Badge } from "../components/Badge";
+import { Video } from "../components/Video";
 
 export function Hero() {
 	return (
