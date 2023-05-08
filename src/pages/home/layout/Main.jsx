@@ -1,4 +1,5 @@
 import { Carousel } from "../../../global/components/Carousel";
+import { Category } from "../../../global/components/Category";
 import { Hero } from "./Hero";
 
 export function Main() {
@@ -11,9 +12,7 @@ export function Main() {
 			</div>
 			<div className="bg-zinc-900 px-2 py-6">
 				<div className="max-w-[1200px] mx-auto">
-					<div className="">
-						<Carousel />
-					</div>
+					<Category />
 				</div>
 			</div>
 		</main>
