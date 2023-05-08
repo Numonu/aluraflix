@@ -3,6 +3,7 @@ import { useState } from "react";
 import { createContext } from "react";
 import { Global } from "../global/layout/Global";
 import { Main } from "../pages/home/layout/Main";
+import { CreateCategory } from "../pages/create-category/CreateCategory";
 
 export const dataContext = createContext(null);
 export function Core() {
@@ -34,7 +35,8 @@ export function Core() {
 				<Routes>
 					<Route path="/" element={<Global />} >
 						<Route index element={<Main/>}/>
-					</Route>
+						<Route path="create-category" element={<CreateCategory/>}/>
+					</Route>git
 				</Routes>
 			</BrowserRouter>
 		</dataContext.Provider>
