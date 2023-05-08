@@ -3,11 +3,13 @@ import { Badge } from "../../../global/components/Badge";
 export function Hero() {
 	return (
 		<div className="py-4 px-1">
-			<div>
-				<Badge>
+			<div className="flex flex-col gap-3">
+				<Badge className="bg-sky-500">
                     FrontEnd
                 </Badge>
-				<h2>Challenge React</h2>
+				<h2 className="text-2xl">
+                    Challenge React
+                </h2>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit.
 					Eius, neque.
