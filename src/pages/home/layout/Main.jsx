@@ -16,13 +16,15 @@ export function Main() {
 			</div>
 			<div className="bg-zinc-900 px-2 py-6">
 				<div className="max-w-[1200px] mx-auto">
-					{data.map((e) => {
-						return (
-							<CategoryContex.Provider value={e}>
-								<Category />
-							</CategoryContex.Provider>
-						);
-					})}
+					<div className="flex flex-col gap-6">
+						{data.map((e) => {
+							return (
+								<CategoryContex.Provider value={e}>
+									<Category />
+								</CategoryContex.Provider>
+							);
+						})}
+					</div>
 				</div>
 			</div>
 		</main>
