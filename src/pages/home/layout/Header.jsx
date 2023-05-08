@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { Dialog } from "../../../global/components/Dialog";
 export function Header() {
 	const [dialog, setDialog] = useState(false);
 
@@ -17,9 +18,9 @@ export function Header() {
 				className="text-white relative px-1 aspect-square text-2xl hover:bg-white hover:text-black transition-colors rounded-full xl:text-xl"
 				onClick={() => (dialog ? close() : open())}
 			>
-                <div className="absolute left-0 bottom-0 -translate-x-1/2 translate-y-1/2">
-                    xd
-                </div>
+                <Dialog>
+                    holaxd
+                </Dialog>
 				<BsThreeDotsVertical />
 			</button>
 		</header>
