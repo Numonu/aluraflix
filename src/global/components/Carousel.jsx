@@ -1,5 +1,7 @@
+import { Video } from "./Video";
+
 export function Carousel(){
-    return <ul>
-        
-    </ul>
+    return <div>
+        <Video/>
+    </div>
 }
