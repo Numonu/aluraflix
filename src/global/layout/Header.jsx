@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import { NavDialog } from "../../pages/home/components/NavDialog";
+import { NavDialog } from "../components/NavDialog";
 export function Header() {
 	const [dialog, setDialog] = useState(false);
 
