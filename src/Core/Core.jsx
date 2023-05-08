@@ -13,7 +13,9 @@ export function Core() {
 		},
 	});
 	return (
-		<dataContext.Provider>
+		<dataContext.Provider value={{
+            data,
+        }}>
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Home />} />
