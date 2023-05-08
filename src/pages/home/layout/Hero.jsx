@@ -3,8 +3,8 @@ import { Video } from "../../../global/components/Video";
 
 export function Hero() {
 	return (
-		<div className="py-4 px-1 flex flex-col gap-4">
-			<div className="flex flex-col gap-4">
+		<div className="py-4 px-1 grid grid-cols-1 gap-4 md:py-6 lg:grid-cols-2 lg:h-[30rem]">
+			<div className="flex flex-col gap-4 lg:justify-center">
 				<Badge className="bg-sky-500">
                     Front End
                 </Badge>
@@ -15,8 +15,8 @@ export function Hero() {
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque optio rerum ab amet, accusantium dolorum aperiam eum iusto asperiores eveniet.
 				</p>
 			</div>
-			<div className="w-full max-w-md mx-auto">
-                <Video/>
+			<div className="self-center">
+                <Video className="max-w-md"/>
             </div>
 		</div>
 	);
