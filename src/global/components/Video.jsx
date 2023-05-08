@@ -1,18 +1,16 @@
-export function Video({ className, link , borderColor }) {
-
+export function Video({ link, borderColor }) {
 	const url = new URL(link || "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 	const videoId = url.searchParams.get("v");
 
 	return (
-		<div className={`border-2 ${className}`} style={{borderColor : borderColor}}>
-			<iframe
-				className="w-full aspect-video"
-				src={`https://www.youtube-nocookie.com/embed/${videoId}`}
-				title="YouTube video player"
-				frameBorder="0"
-				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-				allowFullScreen
-			></iframe>
-		</div>
+		<iframe
+			style={{borderColor : borderColor}}
+			className="w-full aspect-video border-2"
+			src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+			title="YouTube video player"
+			frameBorder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			allowFullScreen
+		></iframe>
 	);
 }
