@@ -8,7 +8,7 @@ export function Header() {
 	const close = () => setDialog(false);
 
 	return (
-		<header className="bg-zinc-900 py-2 flex justify-between items-center">
+		<header className="bg-zinc-900 py-2 px-2 flex justify-between items-center">
 			<img
 				className="w-32"
 				src="images/logo.png"
