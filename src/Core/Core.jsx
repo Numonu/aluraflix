@@ -12,6 +12,7 @@ const dataExample = [
 		color: "yellow",
 		title: "Front End",
 		description: "Description Here!!",
+		password : "xd",
 		videos: [
 			"https://www.youtube.com/watch?v=q0UgClC8md4",
 			"https://www.youtube.com/watch?v=0Zb5fgO0ubE",
@@ -21,6 +22,7 @@ const dataExample = [
 		color: "green",
 		title: "Back End",
 		description: "Description Here!!",
+		password : "xd",
 		videos: [
 			"https://www.youtube.com/watch?v=WMeM7-JswKQ",
 			"https://www.youtube.com/watch?v=9U8EaVjuq6U",
@@ -30,6 +32,7 @@ const dataExample = [
 		color: "cyan",
 		title: "Databases",
 		description: "Description Here!!",
+		password : "owo",
 		videos: [
 			"https://www.youtube.com/watch?v=WMeM7-JswKQ",
 			"https://www.youtube.com/watch?v=9U8EaVjuq6U",

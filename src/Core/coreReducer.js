@@ -12,6 +12,7 @@ export const reducer = () => {
 					color: action.form.color,
 					title: action.form.title,
 					description: action.form.description,
+					password : action.form.password,
 					videos: [],
 				});
 				break;

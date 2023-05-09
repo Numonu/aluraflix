@@ -21,6 +21,7 @@ export function CreateCategory() {
 				title : info.get("titulo"),
 				description : info.get("descripcion"),
 				color : info.get("color") || "white",
+				password : info.get("clave secreta")
 			}
 		});
 		navigator("/");
