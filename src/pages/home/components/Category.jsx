@@ -9,11 +9,13 @@ export function Category() {
 	
 	return (
 		<div className="flex flex-wrap flex-col gap-4">
-			<div className="flex items-center gap-2">
-				<Badge className="text-lg" style={{ backgroundColor: color }}>
+			<div className="">
+				<Badge className="text-lg mb-2 font-bold" style={{ borderColor: color }}>
 					{title || "Empty"}
 				</Badge>
-				<p>{description}</p>
+				<p>
+					{description}
+				</p>
 			</div>
 			<Carousel/>
 		</div>
