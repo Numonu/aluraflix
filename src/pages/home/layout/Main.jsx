@@ -17,9 +17,9 @@ export function Main() {
 			<div className="bg-zinc-900 py-6 px-2">
 				<div className="max-w-[1200px] mx-auto">
 					<div className="flex flex-col gap-6">
-						{data.map((e) => {
+						{data.map((e , i) => {
 							return (
-								<CategoryContex.Provider value={e}>
+								<CategoryContex.Provider value={e} key={e.title + i}>
 									<Category />
 								</CategoryContex.Provider>
 							);

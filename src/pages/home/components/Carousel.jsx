@@ -8,9 +8,9 @@ export function Carousel() {
 
 	return (
 		<div className="w-full flex overflow-y-hidden overflow-x-auto gap-4">
-			{videos && videos.map((e) => {
+			{videos && videos.map((e , i) => {
 				return (
-					<div className="shrink-0">
+					<div className="shrink-0" key={e + i}>
 						<Video link={e}/>
 					</div>
 				);
