@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { dataContext } from "../../../Core/Core";
 import { CategoryTable } from "../components/CategoryTable";
 import { ColorInput } from "../components/ColorInput";
 import { Input } from "../components/Input";
 
 export function CreateCategory() {
+	const data = useContext(dataContext);
 	return (
 		<div className="max-w-[1200px] mx-auto px-2">
 			<h1 className="text-2xl text-center uppercase py-4">
@@ -31,16 +34,16 @@ export function CreateCategory() {
 				</div>
 			</form>
 			<div className="grid grid-cols-3 my-12 [&>*]:border-[.1rem] [&>*]:p-1 border-[.05rem] [&>*]:truncate">
-				<div>
-					Titulo
-				</div>
-				<div>
-					Descripcion
-				</div>
-				<div>
-					Opciones
-				</div>
-				<CategoryTable title="Front End" description="Esta es una descripcion"/>
+				<div>Titulo</div>
+				<div>Descripcion</div>
+				<div>Opciones</div>
+				{data.map((e , i) => (
+					<CategoryTable
+						key={e.title + i}
+						title={e.title}
+						description={e.description}
+					/>
+				))}
 			</div>
 		</div>
 	);
