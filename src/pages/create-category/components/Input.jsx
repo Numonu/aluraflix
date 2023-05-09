@@ -25,6 +25,7 @@ export function Input({ label }) {
 				onFocus={on}
 				onBlur={off}
 				ref={inputEl}
+				required
 			/>
 		</div>
 	);
