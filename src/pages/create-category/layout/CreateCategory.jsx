@@ -1,3 +1,4 @@
+import { ColorInput } from "../components/ColorInput";
 import { Input } from "../components/Input";
 
 export function CreateCategory() {
@@ -15,13 +16,7 @@ export function CreateCategory() {
 				<Input label="Title" />
 				<Input label="Description" />
 				<Input label="Clave secreta" />
-				<label
-					htmlFor="color"
-					className="text-xl mt-6 flex items-center gap-4"
-				>
-					<span>Color de la categoria</span>
-					<input type="color" id="color" />
-				</label>
+				<ColorInput/>
 				<div className="grid grid-cols-2 gap-4 text-xl mx-auto mt-6">
 					<button className="bg-cyan-500 px-4 py-1">Crear</button>
 					<button className="bg-zinc-100 text-black px-4 py-1">
