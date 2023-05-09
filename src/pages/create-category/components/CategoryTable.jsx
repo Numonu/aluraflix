@@ -1,4 +1,4 @@
-export function CategoryTable({ title, description }) {
+export function CategoryTable({ title, description , deleteOrder }) {
 	return (
 		<>
 			<div>{title}</div>

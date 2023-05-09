@@ -42,6 +42,7 @@ export function CreateCategory() {
 						key={e.title + i}
 						title={e.title}
 						description={e.description}
+						deleteOrder={i}
 					/>
 				))}
 			</div>
