@@ -29,6 +29,17 @@ export function CreateCategory() {
 					</button>
 				</div>
 			</form>
+			<div className="grid grid-cols-3 my-12 [&>*]:border-[.1rem] [&>*]:p-1">
+				<div>
+					Titulo
+				</div>
+				<div>
+					Descripcion
+				</div>
+				<div>
+					Opcionesgit a
+				</div>
+			</div>
 		</div>
 	);
 }
