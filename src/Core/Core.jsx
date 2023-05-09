@@ -30,7 +30,10 @@ const dataExample = [
 export function Core() {
 	const [data, dispatch] = useReducer(reducer , dataExample);
 	return (
-		<dataContext.Provider value={data}>
+		<dataContext.Provider value={{
+			data,
+			dispatch
+		}}>
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<Global />}>
