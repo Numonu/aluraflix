@@ -10,10 +10,10 @@ export function Category() {
 	return (
 		<div className="flex flex-wrap flex-col gap-4">
 			<div className="">
-				<Badge className="text-lg mb-2 font-bold" style={{ borderColor: color }}>
+				<Badge className="text-lg mb-2" style={{ borderColor: color }}>
 					{title || "Empty"}
 				</Badge>
-				<p>
+				<p className="text-zinc-300 font-light">
 					{description}
 				</p>
 			</div>
