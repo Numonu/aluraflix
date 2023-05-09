@@ -1,11 +1,11 @@
-export function Video({ link, borderColor }) {
+export function Video({ link }) {
+
 	const url = new URL(link || "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
 	const videoId = url.searchParams.get("v");
 
 	return (
 		<iframe
-			style={{borderColor : borderColor}}
-			className="w-full aspect-video border-2 max-w-lg"
+			className="w-full aspect-video max-w-lg shadow-md"
 			src={`https://www.youtube-nocookie.com/embed/${videoId}`}
 			title="YouTube video player"
 			frameBorder="0"
