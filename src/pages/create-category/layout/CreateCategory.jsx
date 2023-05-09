@@ -5,7 +5,7 @@ import { ColorInput } from "../components/ColorInput";
 import { Input } from "../components/Input";
 
 export function CreateCategory() {
-	const data = useContext(dataContext);
+	const {data} = useContext(dataContext);
 	return (
 		<div className="max-w-[1200px] mx-auto px-2">
 			<h1 className="text-2xl text-center uppercase py-4">
@@ -37,7 +37,7 @@ export function CreateCategory() {
 				<div>Titulo</div>
 				<div>Descripcion</div>
 				<div>Opciones</div>
-				{data.map((e , i) => (
+				{data && data.map((e , i) => (
 					<CategoryTable
 						key={e.title + i}
 						title={e.title}

@@ -26,9 +26,18 @@ const dataExample = [
 			"https://www.youtube.com/watch?v=9U8EaVjuq6U",
 		],
 	},
+	{
+		color: "cyan",
+		title: "Databases",
+		description: "Description Here!!",
+		videos: [
+			"https://www.youtube.com/watch?v=WMeM7-JswKQ",
+			"https://www.youtube.com/watch?v=9U8EaVjuq6U",
+		],
+	},
 ];
 export function Core() {
-	const [data, dispatch] = useReducer(reducer , dataExample);
+	const [data, dispatch] = useReducer(reducer() , [...dataExample]);
 	return (
 		<dataContext.Provider value={{
 			data,
