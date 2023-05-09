@@ -9,17 +9,22 @@ export function CreateCategory() {
 			</h1>
 			<form
 				className="flex flex-col gap-2 max-w-2xl mx-auto"
-				onSubmit={e => {
+				onSubmit={(e) => {
 					e.preventDefault();
 				}}
 			>
 				<Input label="Title" />
 				<Input label="Description" />
 				<Input label="Clave secreta" />
-				<ColorInput/>
+				<ColorInput />
 				<div className="grid grid-cols-2 gap-4 text-xl mx-auto mt-6">
-					<button className="bg-cyan-500 px-4 py-1">Crear</button>
-					<button className="bg-zinc-100 text-black px-4 py-1">
+					<button className="text-red-500 border-red-500 hover:bg-red-500 hover:text-black px-4 py-1 border-2 transition-colors rounded-bl-xl">
+						Crear
+					</button>
+					<button
+						className="text-white border-white hover:bg-white hover:text-black px-4 py-1 border-2 transition-colors rounded-tr-xl"
+						type="reset"
+					>
 						Limpiar
 					</button>
 				</div>
