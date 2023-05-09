@@ -55,7 +55,7 @@ export function CreateCategory() {
 					</button>
 				</div>
 			</form>
-			<div className="grid grid-cols-3 my-12 [&>*]:border-[.1rem] [&>*]:p-1 border-[.05rem] [&>*]:truncate">
+			<div className="grid grid-cols-3 mt-12 [&>*]:border-[.1rem] [&>*]:p-1 border-[.05rem] [&>*]:truncate">
 				<div>Titulo</div>
 				<div>Descripcion</div>
 				<div>Opciones</div>
