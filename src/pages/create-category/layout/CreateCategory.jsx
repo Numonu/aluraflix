@@ -1,3 +1,4 @@
+import { CategoryTable } from "../components/CategoryTable";
 import { ColorInput } from "../components/ColorInput";
 import { Input } from "../components/Input";
 
@@ -29,7 +30,7 @@ export function CreateCategory() {
 					</button>
 				</div>
 			</form>
-			<div className="grid grid-cols-3 my-12 [&>*]:border-[.1rem] [&>*]:p-1">
+			<div className="grid grid-cols-3 my-12 [&>*]:border-[.1rem] [&>*]:p-1 border-[.05rem] [&>*]:truncate">
 				<div>
 					Titulo
 				</div>
@@ -37,8 +38,9 @@ export function CreateCategory() {
 					Descripcion
 				</div>
 				<div>
-					Opcionesgit a
+					Opciones
 				</div>
+				<CategoryTable title="Front End" description="Esta es una descripcion"/>
 			</div>
 		</div>
 	);
