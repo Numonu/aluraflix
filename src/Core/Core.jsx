@@ -3,7 +3,7 @@ import { useState } from "react";
 import { createContext } from "react";
 import { Global } from "../global/layout/Global";
 import { Main } from "../pages/home/layout/Main";
-import { CreateCategory } from "../pages/create-category/CreateCategory";
+import { CreateCategory } from "../pages/create-category/layout/CreateCategory";
 
 export const dataContext = createContext(null);
 export function Core() {
