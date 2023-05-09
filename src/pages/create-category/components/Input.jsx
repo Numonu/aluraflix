@@ -20,6 +20,7 @@ export function Input({ label }) {
 				{label}
 			</span>
 			<input
+				name={label.toLowerCase()}
 				className={`bg-transparent border-b-2 outline-none text-lg transition-[border-color] ${focus && "border-red-500"}`}
 				type="text"
 				onFocus={on}

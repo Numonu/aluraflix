@@ -7,16 +7,14 @@ export const reducer = () => {
 				console.log(action.order);
 				draft.splice(action.order, 1);
 				break;
-            case "create":  
-                draft.push({
-                    color : action.color,
-                    title : action.title,
-                    description : action.description,
-                    videos : [
-
-                    ]
-                })
-                break;
+			case "create":
+				draft.push({
+					color: action.form.color,
+					title: action.form.title,
+					description: action.form.description,
+					videos: [],
+				});
+				break;
 			default:
 				console.error(action.type);
 				break;
