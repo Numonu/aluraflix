@@ -3,6 +3,7 @@ import { createPortal } from "react-dom";
 import { useContext } from "react";
 import { dataContext } from "../../../Core/Core";
 import { Modal } from "../../../global/components/Modal";
+import toast from "react-hot-toast";
 
 export function CategoryTable({ title, description, deleteOrder }) {
 	const { dispatch, data } = useContext(dataContext);
@@ -17,6 +18,10 @@ export function CategoryTable({ title, description, deleteOrder }) {
 				type: "delete",
 				order: deleteOrder,
 			});
+			toast.success("Categoria eliminada con exito!");
+		}
+		else{
+			toast.error("Clave incorrecta!");
 		}
 	};
 

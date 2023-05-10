@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 import { useContext } from "react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import { dataContext } from "../../../Core/Core";
 import { CategoryTable } from "../components/CategoryTable";
@@ -24,6 +25,7 @@ export function CreateCategory() {
 				password : info.get("clave secreta")
 			}
 		});
+		toast.success("Categoria creada con exito!");
 		navigator("/");
 	}
 

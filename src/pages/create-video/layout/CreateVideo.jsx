@@ -24,7 +24,7 @@ export function CreateVideo() {
 		} else {
 			toast.error("Primero debes crear una categoria!");
 		}
-	};g
+	};
 
 	return (
 		<div className="max-w-[700px] mx-auto px-2">
