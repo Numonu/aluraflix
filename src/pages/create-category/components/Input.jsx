@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 
-export function Input({ label }) {
+export function Input({ label , onChangue }) {
 	const [focus, setFocus] = useState(false);
 	const inputEl = useRef(null);
 
@@ -27,6 +27,7 @@ export function Input({ label }) {
 				onBlur={off}
 				ref={inputEl}
 				required
+				onChange={e => onChangue && onChangue(e.target.value)}
 			/>
 		</div>
 	);

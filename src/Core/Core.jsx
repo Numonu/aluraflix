@@ -5,39 +5,11 @@ import { Main } from "../pages/home/layout/Main";
 import { CreateCategory } from "../pages/create-category/layout/CreateCategory";
 import { useReducer } from "react";
 import { reducer } from "./coreReducer";
+import { CreateVideo } from "../pages/create-video/layout/CreateVideo";
 
 export const dataContext = createContext(null);
 const dataExample = [
-	{
-		color: "yellow",
-		title: "Front End",
-		description: "Description Here!!",
-		password : "xd",
-		videos: [
-			"https://www.youtube.com/watch?v=q0UgClC8md4",
-			"https://www.youtube.com/watch?v=0Zb5fgO0ubE",
-		],
-	},
-	{
-		color: "green",
-		title: "Back End",
-		description: "Description Here!!",
-		password : "xd",
-		videos: [
-			"https://www.youtube.com/watch?v=WMeM7-JswKQ",
-			"https://www.youtube.com/watch?v=9U8EaVjuq6U",
-		],
-	},
-	{
-		color: "cyan",
-		title: "Databases",
-		description: "Description Here!!",
-		password : "owo",
-		videos: [
-			"https://www.youtube.com/watch?v=WMeM7-JswKQ",
-			"https://www.youtube.com/watch?v=9U8EaVjuq6U",
-		],
-	},
+	
 ];
 export function Core() {
 	const [data, dispatch] = useReducer(reducer() , [...dataExample]);
@@ -53,6 +25,10 @@ export function Core() {
 						<Route
 							path="create-category"
 							element={<CreateCategory />}
+						/>
+						<Route
+							path="create-video"
+							element={<CreateVideo />}
 						/>
 					</Route>
 				</Routes>

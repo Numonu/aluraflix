@@ -12,9 +12,12 @@ export const reducer = () => {
 					color: action.form.color,
 					title: action.form.title,
 					description: action.form.description,
-					password : action.form.password,
+					password: action.form.password,
 					videos: [],
 				});
+				break;
+			case "add-video":
+				draft[action.order].videos.push(action.link);
 				break;
 			default:
 				console.error(action.type);
