@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { createContext, useEffect } from "react";
 import { Global } from "../global/layout/Global";
 import { Main } from "../pages/home/layout/Main";
@@ -46,6 +46,7 @@ export function Core() {
 							element={<CreateVideo />}
 						/>
 					</Route>
+					<Route path="*" element={<Navigate to="/aluraflix"/>}/>
 				</Routes>
 			</BrowserRouter>
 		</dataContext.Provider>
