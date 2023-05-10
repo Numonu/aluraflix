@@ -1,7 +1,12 @@
 export function Video({ link }) {
 
-	const url = new URL(link || "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
-	const videoId = url.searchParams.get("v");
+	let videoId;
+	try {
+		const url = new URL(link || "https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+		videoId = url.searchParams.get("v");
+	} catch (error) {
+		videoId = "dQw4w9WgXcQ";
+	}
 
 	return (
 		<iframe
