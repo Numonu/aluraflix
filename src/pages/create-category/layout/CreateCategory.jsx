@@ -26,7 +26,7 @@ export function CreateCategory() {
 			}
 		});
 		toast.success("Categoria creada con exito!");
-		navigator("/");
+		formEl.current.reset();
 	}
 
 	return (
