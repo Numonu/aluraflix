@@ -19,6 +19,10 @@ export const reducer = () => {
 			case "add-video":
 				draft[action.order].videos.push(action.link);
 				break;
+			case "fill":
+				draft.push(...action.data);
+				console.log("try fill!" , action.data);
+				break;
 			default:
 				console.error(action.type);
 				break;

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
 import { Global } from "../global/layout/Global";
 import { Main } from "../pages/home/layout/Main";
 import { CreateCategory } from "../pages/create-category/layout/CreateCategory";
@@ -13,6 +13,21 @@ const dataExample = [
 ];
 export function Core() {
 	const [data, dispatch] = useReducer(reducer() , [...dataExample]);
+
+	useEffect(() => {
+		localStorage.data && dispatch({
+			type : "fill",
+			data : JSON.parse(localStorage.data)
+		})
+		return () => {
+			
+		}
+	} , [])
+
+	useEffect(() => {
+		localStorage.data = JSON.stringify(data);
+	} ,[data])
+
 	return (
 		<dataContext.Provider value={{
 			data,
