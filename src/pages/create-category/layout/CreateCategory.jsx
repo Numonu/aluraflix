@@ -44,7 +44,7 @@ export function CreateCategory() {
 			>
 				<Input label="Titulo" />
 				<Input label="Descripcion" />
-				<Input label="Clave secreta" />
+				<Input label="Clave secreta" type="password"/>
 				<ColorInput />
 				<div className="grid grid-cols-2 gap-4 text-xl mx-auto mt-6">
 					<button className="text-red-500 border-red-500 hover:bg-red-500 hover:text-black px-4 py-1 border-2 transition-colors rounded-bl-xl">

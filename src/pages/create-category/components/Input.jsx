@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useState } from "react";
 
-export function Input({ label , onChangue }) {
+export function Input({ label , onChangue , type }) {
 	const [focus, setFocus] = useState(false);
 	const inputEl = useRef(null);
 
@@ -22,7 +22,7 @@ export function Input({ label , onChangue }) {
 			<input
 				name={label.toLowerCase()}
 				className={`bg-transparent border-b-2 outline-none text-lg transition-[border-color] ${focus && "border-red-500"}`}
-				type="text"
+				type={type || "text"}
 				onFocus={on}
 				onBlur={off}
 				ref={inputEl}
