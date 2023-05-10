@@ -20,7 +20,7 @@ export function CreateVideo() {
 				link,
 			});
 			toast.success("Video agregado correctamente!");
-			navigate("/");
+			navigate("/aluraflix");
 		} else {
 			toast.error("Primero debes crear una categoria!");
 		}

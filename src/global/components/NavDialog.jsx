@@ -7,19 +7,19 @@ export function NavDialog() {
 		<Dialog className="bg-black text-white p-2 text-lg flex flex-col gap-2 w-max text-start rounded-md lg:text-base">
 			<div
 				className="hover:bg-white hover:text-black p-1 flex gap-2 items-center"
-				onClick={() => navigate("/")}
+				onClick={() => navigate("/aluraflix")}
 			>
 				<AiOutlineHome className="text-xl"/> Inicio
 			</div>
 			<div
 				className="hover:bg-white hover:text-black p-1 flex gap-2 items-center"
-				onClick={() => navigate("/create-video")}
+				onClick={() => navigate("/aluraflix/create-video")}
 			>
 				<AiOutlineVideoCameraAdd className="text-xl"/> Nuevo Video
 			</div>
 			<div
 				className="hover:bg-white hover:text-black p-1 flex gap-2 items-center"
-				onClick={() => navigate("/create-category")}
+				onClick={() => navigate("/aluraflix/create-category")}
 			>
 				<AiOutlineFolderOpen className="text-xl"/> Nueva Categoria
 			</div>

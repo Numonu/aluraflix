@@ -15,7 +15,7 @@ export function Header() {
 				className="w-32 cursor-pointer"
 				src="images/logo.png"
 				alt="Logo de aluraflix"
-				onClick={() => navigate("/")}
+				onClick={() => navigate("/aluraflix")}
 			/>
 			<button
 				className="text-white relative px-1 aspect-square text-2xl hover:bg-white hover:text-black transition-colors rounded-full xl:text-xl"

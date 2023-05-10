@@ -35,14 +35,14 @@ export function Core() {
 		}}>
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<Global />}>
+					<Route path="/aluraflix" element={<Global />}>
 						<Route index element={<Main />} />
 						<Route
-							path="create-category"
+							path="/aluraflix/create-category"
 							element={<CreateCategory />}
 						/>
 						<Route
-							path="create-video"
+							path="/aluraflix/create-video"
 							element={<CreateVideo />}
 						/>
 					</Route>
